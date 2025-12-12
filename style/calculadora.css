@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.frame-completo {
+    width: 400px;
+    height: 700px;
+    background-color: gainsboro;
+    outline: thin solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.resultado {
+    background-color: whitesmoke;
+    margin: .5rem 0.5rem 0;
+    height: 7rem;
+    font-size: 2rem;
+    overflow: auto;
+}
+.botones {
+    margin: 0.5rem;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 2px;
+}
+.btn:last-child {
+    grid-column: 1 / 5;
+}
+.btn:hover {
+    background-color: #008c8c72;
+}
